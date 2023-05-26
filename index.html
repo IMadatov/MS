@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Word Quiz Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container mx-auto mt-10 p-4">
+        <h1 class="text-3xl text-center mb-6">Word Quiz Game</h1>
+        <div id="playerSection">
+            <label for="playerName" class="block mb-2">Enter your name:</label>
+            <input type="text" id="playerName" placeholder="Your name" class="w-full p-2 border border-gray-300 mb-4">
+            <button id="startBtn" class="block mx-auto bg-blue-500 text-white rounded p-2">Start</button>
+        </div>
+        <div id="gameSection" style="display: none;">
+            <div class="scoreboard bg-yellow-200 text-gray-800 p-4 fixed top-0 left-0">
+                <h2 class="text-lg font-semibold">Scoreboard</h2>
+                <ul id="scoresList" class="mt-2"></ul>
+                <h2 class="text-lg font-semibold mt-4">Overall Scoreboard</h2>
+                <ul id="overallScoresList" class="mt-2"></ul>
+            </div>
+            <p class="question text-lg font-semibold mt-10 mb-4" id="question">Guess the correct word:</p>
+            <input type="text" id="answerInput" placeholder="Enter your answer"
+                class="w-full p-2 border border-gray-300 mb-4" >
+            <button id="submitBtn" class="block mx-auto bg-blue-500 text-white rounded p-2 neon-effect">Submit</button>
+            <p id="result" class="mt-4 text-lg font-semibold"></p>
+        </div>
+        <div id="scoreboard" class="mt-4" style="display: none;">
+            <h2 class="text-lg font-semibold">Overall Scoreboard</h2>
+            <ul id="overallScoresList" class="mt-2"></ul>
+        </div>
+        <button id="restartBtn" class="block mx-auto bg-blue-500 text-white rounded p-2 mt-4"
+            style="display: none;">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+body {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.question {
+    font-size: 18px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.scoreboard {
+    text-align: left;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+
+.scoreboard ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.scoreboard li {
+    margin-bottom: 5px;
+}
+
+.neon-effect {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.neon-effect:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#scoreboard {
+    position: relative;
+}
+
+#scoreboard ul {
+    padding-left: 0;
+}
+
+#scoreboard ul li {
+    display: flex;
+    justify-content: space-between;
+}
